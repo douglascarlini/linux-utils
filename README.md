@@ -20,3 +20,6 @@ subj="Subject"
 
 sendemail -f $title -t $dest -u $subj -s $MAIL_HOST -o tls=yes -xu $MAIL_USER -xp $MAIL_PASS -o message-file=/path/to/file
 ```
+
+##### Excluir arquivo do historico do Git
+`git filter-branch --tree-filter 'rm -f arquivo.ext' -- --all && git push -f`
